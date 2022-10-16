@@ -35,7 +35,7 @@ app.get("/", function (_req, res) {
   res.sendFile(
     path.join(
       __dirname,
-      args[0] === "production" ? "./dist/index.html" : "./index.html"
+      args[0] === "production" ? "./build/index.html" : "./index.html"
     )
   );
 });

@@ -5,9 +5,9 @@ generate({
   base: "./",
   src: "index.html",
   target: {
-    html: "dist/index.html",
-    css: "dist/critical.min.css",
-    uncritical: "dist/style.min.css",
+    html: "build/index.html",
+    css: "build/critical.min.css",
+    uncritical: "build/style.min.css",
   },
   width: 1300,
   height: 900,
