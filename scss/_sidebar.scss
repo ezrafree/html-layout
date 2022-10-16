@@ -1,0 +1,13 @@
+#root {
+  aside {
+    &.left {
+      nav {
+        li {
+          a {
+            color: $sidebar-text;
+          }
+        }
+      }
+    }
+  }
+}

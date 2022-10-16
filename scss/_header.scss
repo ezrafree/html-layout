@@ -1,0 +1,44 @@
+// header
+#root {
+  & > header {
+    logo {
+      display: inline-block;
+      margin: 0.5em 1em 0.25em;
+
+      a {
+        display: block;
+
+        img {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  #root {
+    & > header {
+      display: flex;
+
+      logo {
+        nav {
+          justify-content: center;
+        }
+      }
+
+      #nav-toggle {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  #root {
+    & > header {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

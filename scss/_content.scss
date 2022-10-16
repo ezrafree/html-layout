@@ -1,0 +1,94 @@
+// content
+#root {
+  header {
+    background: $primary;
+
+    .nav {
+      li {
+        a {
+          color: $header-text;
+          text-decoration: none;
+          font-weight: 600;
+
+          &:hover,
+          &:focus,
+          &:active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    article {
+      background-color: $white;
+
+      & > * {
+        margin: 1rem;
+      }
+    }
+
+    aside {
+      &.left {
+        background-color: $secondary;
+      }
+
+      &.right {
+        background-color: $silver;
+      }
+    }
+  }
+
+  footer {
+    background-color: $footer;
+    .nav {
+      li {
+        a {
+          color: $footer-text;
+          text-decoration: none;
+
+          &:hover,
+          &:focus,
+          &:active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .menu {
+    a {
+      color: $link;
+      text-decoration: none;
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  #root {
+    header {
+      .nav {
+        li {
+          a {
+            text-decoration: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: lighten($primary, 30%);
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

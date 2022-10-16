@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Site</title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
+            affers, cur Thorius, cur Caius Postumius, cur omnium horum magister,
+            Orata, non iucundissime vixerit."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="author" content="John Doe" />
+
+    <meta
+      property="og:image"
+      content="https://dummyimage.com/80x80/c9f227/000&text=a"
+    />
+    <meta
+      property="og:description"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
+            affers, cur Thorius, cur Caius Postumius, cur omnium horum magister,
+            Orata, non iucundissime vixerit."
+    />
+    <meta property="og:title" content="Lorem Ipsum Dolor Sit Amet" />
+
+    <link async rel="stylesheet" href="css/style.min.css" />
+
+    <link
+      rel="preload"
+      href="/fonts/IBMPlexSansVar-Roman.woff2"
+      as="font"
+      crossorigin
+    />
+  </head>
+
+  <body>
+    <root id="root">
+      <header>
+        <logo>
+          <a href="/"
+            ><img
+              src="/images/logo.png"
+              width="40"
+              height="40"
+              alt="Website logo"
+          /></a>
+        </logo>
+        <nav class="toggle-nav" role="navigation">
+          <ul class="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Our Products</a></li>
+            <li><a href="/">About Us</a></li>
+          </ul>
+        </nav>
+        <label id="nav-toggle" for="check">
+          <input type="checkbox" id="check" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </header>
+      <main>
+        <article>
+          <h1>Lorem Ipsum Dolor Sit Amet</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
+            affers, cur Thorius, cur Caius Postumius, cur omnium horum magister,
+            Orata, non iucundissime vixerit? <em>Lorem ipsum dolor</em> sit
+            amet, consectetur adipiscing elit. Quid affers, cur Thorius, cur
+            Caius Postumius, cur omnium horum magister, Orata, non iucundissime
+            vixerit?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur
+            <a href="/">adipiscing elit</a>. Quid affers, cur Thorius, cur Caius
+            Postumius, cur omnium horum magister, Orata, non iucundissime
+            vixerit?
+          </p>
+          <button role="button">Learn more</button>
+        </article>
+        <aside class="left">
+          <nav role="navigation">
+            <ul class="menu">
+              <li><a href="/">Our Team</a></li>
+              <li><a href="/">Mission Statement</a></li>
+              <li><a href="/">Reviews</a></li>
+              <li><a href="/">Contact Us</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <aside class="right">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </aside>
+      </main>
+      <footer>
+        <nav role="navigation">
+          <ul class="nav">
+            <li><a href="/">Sign In</a></li>
+            <li><a href="/">Privacy Policy</a></li>
+            <li><a href="/">Terms &amp; Conditions</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </root>
+    <script src="js/script.min.js" defer></script>
+  </body>
+</html>

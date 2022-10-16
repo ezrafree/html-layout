@@ -1,0 +1,38 @@
+{
+  "name": "flexbox-layout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "yarn build:scss & yarn build:js & yarn watch",
+    "watch": "yarn watch:scss & yarn watch:reload",
+    "watch:prod": "yarn watch:scss & yarn watch:compress",
+    "watch:reload": "nodemon serve.js --ext html,scss,js",
+    "watch:compress": "nodemon serve.js production --ext html,scss,js",
+    "watch:scss": "sass scss/style.scss css/style.min.css --style=compressed --embed-sources --watch",
+    "build": "yarn build:scss & yarn build:critical & yarn build:js && yarn build:copy",
+    "build:scss": "sass scss/style.scss css/style.min.css --style=compressed --embed-sources",
+    "build:js": "uglifyjs ./js/script.js --compress --mangle --warn --output ./js/script.min.js",
+    "build:critical": "node critical.mjs",
+    "build:copy": "./build.sh"
+  },
+  "devDependencies": {
+    "chalk": "4.1.2",
+    "connect-livereload": "^0.6.1",
+    "consola": "^2.15.3",
+    "express": "^4.18.2",
+    "find-process": "^1.4.7",
+    "ip": "^1.1.8",
+    "livereload": "^0.9.3",
+    "nodemon": "^2.0.20",
+    "open": "^8.4.0",
+    "portscanner": "^2.2.0",
+    "prettier": "^2.7.1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "critical": "^5.0.3",
+    "sass": "^1.55.0",
+    "uglify-js": "^3.17.3"
+  }
+}

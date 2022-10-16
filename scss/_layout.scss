@@ -1,0 +1,84 @@
+// layout
+html,
+body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  header {
+    flex: 0 100%;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  footer {
+    flex: 0 0 100%;
+    order: 4;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #root {
+    main {
+      display: inline-flex;
+      flex-direction: row;
+
+      article {
+        flex: 3 0 50%;
+        order: 2;
+      }
+
+      aside {
+        flex: 3;
+
+        & > * {
+          margin: 1em;
+        }
+
+        &.left {
+          order: 1;
+        }
+
+        &.right {
+          order: 3;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  #root {
+    main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: stretch;
+      align-content: stretch;
+      height: 100%;
+
+      aside {
+        & > * {
+          margin: 0;
+          padding: 1em;
+        }
+
+        &.right {
+          display: flex;
+          flex: 2 2 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+// elements
+body {
+  font-family: "IBM Plex Sans Roman", Helvetica, Arial, sans-serif;
+  color: $text;
+
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: minmax(2vw, 24pt);
+  font-weight: 500;
+  line-height: minmax(2vw, 24pt);
+  font-variation-settings: "wght" 500, "wdth" 85;
+  margin: 2rem 1rem 1.5rem !important;
+}
+
+i,
+em {
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+}
+
+a {
+  color: $link;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+button {
+  cursor: pointer;
+  color: $white;
+  background-color: $link;
+  border-radius: 5px;
+  padding: 0.75rem 1.25rem;
+  border: 0;
+
+  &:hover {
+    background-color: darken($link, 10%);
+  }
+}
