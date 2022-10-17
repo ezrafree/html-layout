@@ -24,8 +24,16 @@
     article {
       background-color: $white;
 
+      h1 {
+        margin: 1.5rem 1.5rem 1rem;
+      }
+
+      button {
+        margin-top: 0.5rem !important;
+      }
+
       & > * {
-        margin: 1rem;
+        margin: 1.5rem;
       }
     }
 
@@ -87,6 +95,34 @@
               text-decoration: none;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  #root {
+    main {
+      aside {
+        &.left {
+          .menu {
+            li {
+              padding-left: 0.5rem;
+            }
+          }
+        }
+        &.right {
+          p {
+            margin: 1.5rem 0.5rem;
+          }
+        }
+      }
+    }
+    footer {
+      .nav {
+        li {
+          padding-left: 0.5rem;
         }
       }
     }

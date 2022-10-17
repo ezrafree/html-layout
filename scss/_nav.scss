@@ -30,13 +30,13 @@
   width: 50px;
   cursor: pointer;
   margin-top: 0.5rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   z-index: 200;
 
   span {
     background: $white;
     border-radius: 10px;
-    height: 5px;
+    height: 4px;
     margin: 5px 0;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
@@ -60,7 +60,7 @@
       ~ span {
         &:nth-of-type(1) {
           transform-origin: bottom;
-          transform: rotatez(45deg) translate(8px, 0px);
+          transform: rotatez(45deg) translate(6px, 0px);
         }
 
         &:nth-of-type(2) {
@@ -71,14 +71,32 @@
         &:nth-of-type(3) {
           transform-origin: bottom;
           width: 50%;
-          transform: translate(23px, -8px) rotatez(45deg);
+          transform: translate(21px, -7px) rotatez(45deg);
         }
       }
     }
   }
 }
 
+@media (prefers-reduced-motion: reduce) {
+  #nav-toggle {
+    span {
+      transition: opacity 2s ease-in;
+    }
+  }
+}
+
 @media all and (max-width: 767px) {
+  .nav {
+    li {
+      margin: 0.75em 0;
+
+      &:nth-child(1) {
+        margin: 1.25em 0 0.75em;
+      }
+    }
+  }
+
   #root {
     & > header {
       & > nav {
@@ -92,6 +110,12 @@
         background-color: #000;
         font-size: 200%;
         z-index: 100;
+
+        .nav {
+          li {
+            margin: 1em 0;
+          }
+        }
 
         &.toggle-nav {
           display: none;
