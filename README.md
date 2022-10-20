@@ -22,6 +22,24 @@ yarn start
 
 The console output after running `yarn start` will print the output from both the express app and the SCSS compiler.
 
-## To Do
+## HTML Validator
 
-- Update the project to use Express Router to enable browsing to various `.html` files by their URLs.
+Validate the `index.html` file's markup with `html-validate`.
+
+```sh
+npx html-validate index.html
+```
+
+## Lighthouse
+
+This project includes a Node script to run Lighthouse reports. If the report fails, it will open the report results in your browser.
+
+```sh
+./lighthouse.js http://localhost:3000
+```
+
+To open the report in your browser even if the tests all pass, add the `--view` argument.
+
+```sh
+./lighthouse.js http://localhost:3000 --view
+```

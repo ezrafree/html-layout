@@ -1,3 +1,3 @@
 #!/bin/sh
 
-cp ./js/script.min.js ./build/
+cp -v ./js/script.min.js ./build/

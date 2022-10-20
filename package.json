@@ -33,6 +33,7 @@
   "dependencies": {
     "compression": "^1.7.4",
     "critical": "^5.0.3",
+    "html-validate": "^7.6.0",
     "sass": "^1.55.0",
     "uglify-js": "^3.17.3"
   }
