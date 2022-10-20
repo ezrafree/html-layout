@@ -1,2 +1,5 @@
 node_modules
 build
+lighthouse.json
+*.report.html
+lighthouse-report.html

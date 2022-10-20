@@ -22,6 +22,7 @@
     "express": "^4.18.2",
     "find-process": "^1.4.7",
     "ip": "^1.1.8",
+    "lighthouse": "^9.6.7",
     "livereload": "^0.9.3",
     "nodemon": "^2.0.20",
     "open": "^8.4.0",

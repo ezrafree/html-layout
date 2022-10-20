@@ -1,133 +1,115 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <title>Example Site</title>
-    <meta
-      name="description"
-      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
+
+<head>
+  <meta charset="utf-8" />
+  <title>Example Site</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
             affers, cur Thorius, cur Caius Postumius, cur omnium horum magister,
-            Orata, non iucundissime vixerit."
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+            Orata, non iucundissime vixerit." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="author" content="John Doe" />
+  <meta name="author" content="John Doe" />
 
-    <meta
-      property="og:image"
-      content="https://dummyimage.com/80x80/c9f227/000&text=a"
-    />
-    <meta
-      property="og:description"
-      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
+  <meta property="og:image" content="https://dummyimage.com/80x80/c9f227/000&text=a" />
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
             affers, cur Thorius, cur Caius Postumius, cur omnium horum magister,
-            Orata, non iucundissime vixerit."
-    />
-    <meta property="og:title" content="Lorem Ipsum Dolor Sit Amet" />
+            Orata, non iucundissime vixerit." />
+  <meta property="og:title" content="Lorem Ipsum Dolor Sit Amet" />
 
-    <link async rel="stylesheet" href="/css/style.min.css" />
+  <link async rel="stylesheet" href="/css/style.min.css" />
 
-    <link
-      rel="preload"
-      href="/fonts/IBMPlexSansVar-Roman.woff2"
-      as="font"
-      crossorigin
-    />
+  <link rel="preload" href="/fonts/IBMPlexSansVar-Roman.woff2" as="font" crossorigin />
 
-    <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href="/manifest.json" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="apple-mobile-web-app-title" content="Hello World" />
-  </head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#da532c" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="Hello World" />
+</head>
 
-  <body>
-    <root id="root">
-      <header>
-        <logo>
-          <a href="/"
-            ><img
-              src="/images/logo.png"
-              width="40"
-              height="40"
-              alt="Website logo"
-          /></a>
-        </logo>
-        <nav class="toggle-nav" role="navigation">
-          <ul class="nav">
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Our Products</a></li>
-            <li><a href="/">About Us</a></li>
-          </ul>
-        </nav>
-        <label id="nav-toggle" for="check">
-          <input type="checkbox" id="check" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-      </header>
-      <main>
-        <article>
-          <h2>Lorem Ipsum Dolor Sit Amet</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
-            affers, cur Thorius, cur Caius Postumius, cur omnium horum magister,
-            Orata, non iucundissime vixerit? <em>Lorem ipsum dolor</em> sit
-            amet, consectetur adipiscing elit. Quid affers, cur Thorius, cur
-            Caius Postumius, cur omnium horum magister, Orata, non iucundissime
-            vixerit?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur
-            <a href="/">adipiscing elit</a>. Quid affers, cur Thorius, cur Caius
-            Postumius, cur omnium horum magister, Orata, non iucundissime
-            vixerit?
-            <button role="button">Learn more</button>
-          </p>
-          <!-- <img
+<body>
+  <root id="root">
+    <header>
+      <logo>
+        <a href="/"><img src="/images/logo.png" width="40" height="40" alt="Website logo" /></a>
+      </logo>
+      <nav class="toggle-nav" role="navigation">
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Our Products</a></li>
+          <li><a href="/">About Us</a></li>
+        </ul>
+      </nav>
+      <label id="nav-toggle" for="check">
+        <input type="checkbox" id="check" />
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </header>
+    <main>
+      <article>
+        <h2>Lorem Ipsum Dolor Sit Amet</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
+          affers, cur Thorius, cur Caius Postumius, cur omnium horum magister,
+          Orata, non iucundissime vixerit? <em>Lorem ipsum dolor</em> sit
+          amet, consectetur adipiscing elit. Quid affers, cur Thorius, cur
+          Caius Postumius, cur omnium horum magister, Orata, non iucundissime
+          vixerit?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur
+          <a href="/">adipiscing elit</a>. Quid affers, cur Thorius, cur Caius
+          Postumius, cur omnium horum magister, Orata, non iucundissime
+          vixerit?
+        </p>
+        <button role="button">Learn more</button>
+        <!-- <img
             alt="This is a photo."
             width="1200"
             height="800"
             loading="lazy"
             srcset="
               https://res.cloudinary.com/demo/image/upload/w_1200,c_fill/boulder.jpg 1200w,
-              https://res.cloudinary.com/demo/image/upload/w_600,c_fill/boulder.jpg   600w,
-              https://res.cloudinary.com/demo/image/upload/w_300,c_fill/boulder.jpg   300w
+              https://res.cloudinary.com/demo/image/upload/w_600,c_fill/boulder.jpg 600w,
+              https://res.cloudinary.com/demo/image/upload/w_300,c_fill/boulder.jpg 300w
             "
             sizes="(min-width: 700px) 50vw, 90vw"
           /> -->
-        </article>
-        <aside class="left">
-          <nav role="navigation">
-            <ul class="menu">
-              <li><a href="/">Our Team</a></li>
-              <li><a href="/">Mission Statement</a></li>
-              <li><a href="/">Reviews</a></li>
-              <li><a href="/">Contact Us</a></li>
-            </ul>
-          </nav>
-        </aside>
-        <aside class="right">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </aside>
-      </main>
-      <footer>
+      </article>
+      <aside class="left">
         <nav role="navigation">
-          <ul class="nav">
-            <li><a href="/">Sign In</a></li>
-            <li><a href="/">Privacy Policy</a></li>
-            <li><a href="/">Terms &amp; Conditions</a></li>
+          <ul class="menu">
+            <li><a href="/">Our Team</a></li>
+            <li><a href="/">Mission Statement</a></li>
+            <li><a href="/">Reviews</a></li>
+            <li><a href="/">Contact Us</a></li>
           </ul>
         </nav>
-      </footer>
-    </root>
-    <script src="/js/script.min.js" defer></script>
-  </body>
+      </aside>
+      <aside class="right">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </aside>
+    </main>
+    <footer>
+      <nav role="navigation">
+        <ul class="nav">
+          <li><a href="/">Sign In</a></li>
+          <li><a href="/">Privacy Policy</a></li>
+          <li><a href="/">Terms &amp; Conditions</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </root>
+  <script src="/js/script.min.js" defer></script>
+</body>
+
 </html>
