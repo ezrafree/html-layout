@@ -1,5 +1,7 @@
 # Static HTML Layout Playground
 
+![Image of Lighthouse tests success](lighthouse_pass.gif)
+
 This project sets up an ExpressJS server that serves a static `.html` file as a website to the browser. When starting the project, it launches an incognito Google Chrome window. While the HTML is a simple `.html` file, the `css/style.css` file is generated based on the SCSS files in the `scss/` directory. It also minifies the very little vanilla JavaScript it implements with UglifyJS.
 
 This project is intended as a simple playground to build out website/page layouts.

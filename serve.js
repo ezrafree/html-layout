@@ -29,7 +29,7 @@ if (args.includes("production")) {
   app.use(compression());
 }
 
-if (args.includes("production")) app.use(connectLiveReload());
+if (!args.includes("production")) app.use(connectLiveReload());
 
 app.get("/", function (_req, res) {
   res.sendFile(
@@ -68,13 +68,13 @@ portscanner.findAPortNotInUse(preferredPorts).then((available) => {
       `http://${ip.address()}:${listener.address().port}`
     );
 
-    if (args[0] === "production") {
+    if (args.includes("production")) {
       consola.info({
         message: "Enabling gzip compression",
         badge: true,
       });
     }
-    if (args.includes("production")) {
+    if (!args.includes("production")) {
       consola.info({
         message: "Enabling hot reloading",
         badge: true,
