@@ -13,31 +13,19 @@
   }
 }
 
-@media all and (min-width: 768px) {
-  .nav {
-    text-align: center;
-
-    li {
-      display: inline-block;
-      list-style: unset;
-    }
-  }
-}
-
 #nav-toggle {
   display: flex;
   flex-direction: column;
-  width: 50px;
+  width: 42px;
   cursor: pointer;
-  margin-top: 0.5rem;
   margin-right: 0.5rem;
   z-index: 200;
 
   span {
     background: $white;
     border-radius: 10px;
-    height: 4px;
-    margin: 5px 0;
+    height: 3px;
+    margin: 4px 0;
     transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
     &:nth-of-type(1) {
@@ -60,7 +48,7 @@
       ~ span {
         &:nth-of-type(1) {
           transform-origin: bottom;
-          transform: rotatez(45deg) translate(6px, 0px);
+          transform: rotatez(45deg) translate(5px, -1px);
         }
 
         &:nth-of-type(2) {
@@ -71,7 +59,7 @@
         &:nth-of-type(3) {
           transform-origin: bottom;
           width: 50%;
-          transform: translate(21px, -7px) rotatez(45deg);
+          transform: translate(18px, -5px) rotatez(45deg);
         }
       }
     }
@@ -82,6 +70,60 @@
   #nav-toggle {
     span {
       transition: opacity 2s ease-in;
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .nav {
+    text-align: center;
+
+    li {
+      display: inline-block;
+      list-style: unset;
+    }
+  }
+
+  #root {
+    & > header {
+      & > nav {
+        &.toggle-nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+        }
+      }
+    }
+    & > main {
+      & > aside {
+        & > * {
+          margin: 0;
+
+          & > .menu {
+            width: 100%;
+
+            li {
+              margin: 0;
+              border: 0;
+              padding: 0;
+              width: 100%;
+
+              a {
+                width: 100%;
+                margin: 0;
+                padding: 0.75rem 1.5rem;
+                display: flex;
+
+                &:hover {
+                  background-color: darken($secondary, 7.5%);
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -112,8 +154,14 @@
         z-index: 100;
 
         .nav {
+          margin: 1.25rem 0 0;
+
           li {
-            margin: 1em 0;
+            margin: 0 0 1.25rem;
+
+            a {
+              padding: 0 1em;
+            }
           }
         }
 
@@ -126,5 +174,13 @@
         }
       }
     }
+  }
+}
+
+#search {
+  margin: 0 1rem;
+
+  &::-webkit-input-placeholder {
+    color: $grey;
   }
 }

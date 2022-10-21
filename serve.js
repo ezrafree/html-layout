@@ -23,13 +23,13 @@ var port = process.env.PORT || 0;
 
 var app = express();
 
-var args = process.argv.slice(2);
+var args = process.argv;
 
-if (args[0] === "production") {
+if (args.includes("production")) {
   app.use(compression());
 }
 
-if (args[0] !== "production") app.use(connectLiveReload());
+if (args.includes("production")) app.use(connectLiveReload());
 
 app.get("/", function (_req, res) {
   res.sendFile(
@@ -74,7 +74,7 @@ portscanner.findAPortNotInUse(preferredPorts).then((available) => {
         badge: true,
       });
     }
-    if (args[0] !== "production") {
+    if (args.includes("production")) {
       consola.info({
         message: "Enabling hot reloading",
         badge: true,

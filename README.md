@@ -43,3 +43,9 @@ To open the report in your browser even if the tests all pass, add the `--view` 
 ```sh
 ./lighthouse.js http://localhost:3000 --view
 ```
+
+## Resources
+
+To check the contracts of your colors for AA or AAA compliance, use the WebAIM Contrast Checker:
+
+- <https://webaim.org/resources/contrastchecker/>
